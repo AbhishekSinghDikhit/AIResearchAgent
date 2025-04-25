@@ -34,17 +34,17 @@ Design a Deep Research AI Agentic System that:
 ```
 
 - Research Agent: Gathers information by performing real-time web searches through Tavily.
--Drafting Agent: Analyzes and summarizes collected data using Gemini LLM to produce structured, human-readable outputs.
--Streamlit UI: Allows users to input queries and view detailed research results interactively.
+- Drafting Agent: Analyzes and summarizes collected data using Gemini LLM to produce structured, human-readable outputs.
+- Streamlit UI: Allows users to input queries and view detailed research results interactively.
 
 ## ⚙️ Features
 
--🔍 Real-time Web Research: Fetches fresh, relevant information using Tavily’s search capabilities.
--🤖 Dual-Agent Pipeline: Clear separation between research collection and summary drafting for better modularity and quality.
--🧠 Structured Summarization: Gemini LLM drafts concise, referenced answers.
--📚 History Tracking: Maintains session-based history of queries and results.
--🖥️ Streamlit Frontend: Lightweight, intuitive interface with live progress indicators.
--💾 Bookmark Important Research: Ability to bookmark and revisit important responses.
+- 🔍 Real-time Web Research: Fetches fresh, relevant information using Tavily’s search capabilities.
+- 🤖 Dual-Agent Pipeline: Clear separation between research collection and summary drafting for better modularity and quality.
+- 🧠 Structured Summarization: Gemini LLM drafts concise, referenced answers.
+- 📚 History Tracking: Maintains session-based history of queries and results.
+- 🖥️ Streamlit Frontend: Lightweight, intuitive interface with live progress indicators.
+- 💾 Bookmark Important Research: Ability to bookmark and revisit important responses.
 
 
 ## 🚀 Installation
@@ -80,9 +80,11 @@ streamlit run app.py
 The app will be available at http://localhost:8501
 
 ## 🛠 Tech Stack
-Layer | Tools Used
-Language Models | Gemini (via LangChain)
-Search API | Tavily Web Search API
-Agent Framework | LangChain, LangGraph
-Frontend | Streamlit
-Environment Management | Python Dotenv
+
+- Language Models         Gemini (via LangChain)
+- Search API              Tavily Web Search API
+- Agent Framework         LangChain, LangGraph
+- Frontend                Streamlit
+- Environment Management  Python Dotenv
+
+  
