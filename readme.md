@@ -108,11 +108,13 @@ The app will be available at http://localhost:8501
 - View results, complete with citations and references.
 - Bookmark any important findings for later use.
 
- ## 📬 Contact
+## 📬 Contact
 
 For any queries or feedback, feel free to reach out:
-GitHub: [AbhishekSinghDikhit](https://github.com/AbhishekSinghDikhit)
-Email: [aabhishek576@gmail.com](aabhishek576@gmmail.com)
+
+- GitHub: [AbhishekSinghDikhit](https://github.com/AbhishekSinghDikhit)
+- Email: [aabhishek576@gmail.com](mailto:aabhishek576@gmail.com)
+
 
 
   
