@@ -81,10 +81,38 @@ The app will be available at http://localhost:8501
 
 ## 🛠 Tech Stack
 
-- Language Models         Gemini (via LangChain)
-- Search API              Tavily Web Search API
-- Agent Framework         LangChain, LangGraph
-- Frontend                Streamlit
-- Environment Management  Python Dotenv
+| Layer                 | Tools Used                 |
+|-----------------------|----------------------------|
+| Language Models       | Gemini (via LangChain)     |
+| Search API            | Tavily Web Search API      |
+| Agent Framework       | LangChain, LangGraph       |
+| Frontend              | Streamlit                  |
+| Environment Management| Python Dotenv              |
+
+## 🧩 Core Components
+
+| Component           | Description                                                                                                                                                  |
+|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Research Agent      | Accepts the user query, performs multi-threaded web search via Tavily, gathers relevant articles and information.                                            |
+| Drafting Agent      | Processes raw collected data and synthesizes a summarized, human-like draft with references using Gemini LLM.                                                |
+| Agent Orchestration | Managed via LangGraph to ensure the flow between research and drafting agents is smooth and fault-tolerant.                                                  |
+| Frontend UI         | Built with Streamlit to provide a simple, clean interface for users to input queries, view real-time research progress, and access history/bookmarks.        |
+
+## 📋 Usage Guide
+
+- Open the app and type a research query (e.g., "Future of renewable energy in India").
+- Click Search.
+-  Watch live progress:
+      - The Research Agent fetches web content.
+      - The Drafting Agent writes a structured summary.
+- View results, complete with citations and references.
+- Bookmark any important findings for later use.
+
+ ## 📬 Contact
+
+For any queries or feedback, feel free to reach out:
+GitHub: [AbhishekSinghDikhit](https://github.com/AbhishekSinghDikhit)
+Email: [aabhishek576@gmail.com](aabhishek576@gmmail.com)
+
 
   
