@@ -18,7 +18,7 @@ Design a Deep Research AI Agentic System that:
 
 ## 🧩 System Architecture
 
-```text
+```
 [ User Input (Query) ]
         |
         v
@@ -31,9 +31,58 @@ Design a Deep Research AI Agentic System that:
         |
         v
 [ Streamlit UI Output 🎯 ]
+```
 
-Research Agent: Gathers information by performing real-time web searches through Tavily.
+- Research Agent: Gathers information by performing real-time web searches through Tavily.
+-Drafting Agent: Analyzes and summarizes collected data using Gemini LLM to produce structured, human-readable outputs.
+-Streamlit UI: Allows users to input queries and view detailed research results interactively.
 
-Drafting Agent: Analyzes and summarizes collected data using Gemini LLM to produce structured, human-readable outputs.
+## ⚙️ Features
 
-Streamlit UI: Allows users to input queries and view detailed research results interactively.
+-🔍 Real-time Web Research: Fetches fresh, relevant information using Tavily’s search capabilities.
+-🤖 Dual-Agent Pipeline: Clear separation between research collection and summary drafting for better modularity and quality.
+-🧠 Structured Summarization: Gemini LLM drafts concise, referenced answers.
+-📚 History Tracking: Maintains session-based history of queries and results.
+-🖥️ Streamlit Frontend: Lightweight, intuitive interface with live progress indicators.
+-💾 Bookmark Important Research: Ability to bookmark and revisit important responses.
+
+
+## 🚀 Installation
+### 1. Clone the Repository
+```
+git clone https://github.com/AbhishekSinghDikhit/DeepResearchAI.git
+cd DeepResearchAI
+```
+
+### 2. Create and Activate a Virtual Environment
+```
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+### 3. Install Dependencies
+```
+pip install -r requirements.txt
+```
+
+### 4. Set Environment Variables
+
+- Create a .env file in the root directory and add:
+```
+TAVILY_API_KEY=your_tavily_api_key
+GEMINI_API_KEY=your_gemini_api_key
+```
+(You can get free Tavily and Gemini API keys from their official sites.)
+
+### 5. Run the App
+```
+streamlit run app.py
+```
+The app will be available at http://localhost:8501
+
+## 🛠 Tech Stack
+Layer | Tools Used
+Language Models | Gemini (via LangChain)
+Search API | Tavily Web Search API
+Agent Framework | LangChain, LangGraph
+Frontend | Streamlit
+Environment Management | Python Dotenv
